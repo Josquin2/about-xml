@@ -1,5 +1,4 @@
 import React from "react";
-import { SideBar } from "../components/SideBar";
 import { FirstPage } from "./FirstPage";
 import { SecondPage } from "./SecondPage";
 import { ThirdPage } from "./ThirdPage";
@@ -56,22 +55,22 @@ export const PageStickySectionGroup: React.FunctionComponent = () => {
   const pageNav = (
     <Nav onSelect={onNavSelect}>
       <NavList>
-        <NavItem itemId={0} isActive={activeItem === 0} to="#page-1">
+        <NavItem itemId={0} isActive={activeItem === 0}>
           Введение в XML
         </NavItem>
-        <NavItem itemId={1} isActive={activeItem === 1} to="#page-2">
+        <NavItem itemId={1} isActive={activeItem === 1}>
           Основные элементы XML
         </NavItem>
-        <NavItem itemId={2} isActive={activeItem === 2} to="#page-3">
+        <NavItem itemId={2} isActive={activeItem === 2}>
           Атрибуты и пространства имен
         </NavItem>
-        <NavItem itemId={3} isActive={activeItem === 3} to="#page-4">
+        <NavItem itemId={3} isActive={activeItem === 3}>
           Валидация XML
         </NavItem>
-        <NavItem itemId={4} isActive={activeItem === 4} to="#page-5">
+        <NavItem itemId={4} isActive={activeItem === 4}>
           XML-словари
         </NavItem>
-        <NavItem itemId={5} isActive={activeItem === 5} to="#page-6">
+        <NavItem itemId={5} isActive={activeItem === 5}>
           Применение XML
         </NavItem>
       </NavList>
